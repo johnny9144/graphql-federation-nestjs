@@ -5,6 +5,7 @@ import {
 } from '@nestjs/apollo';
 import { Module } from '@nestjs/common';
 import { join } from 'path';
+import { User } from './user.entity';
 import { PostsResolver } from './posts.resolver';
 import { UsersResolver } from './users.resolver';
 import { PostsService } from './posts.service'; // Not included in example
@@ -20,11 +21,12 @@ import { PostsService } from './posts.service'; // Not included in example
           '..',
           '..',
           '..',
-          'apps',
-          'posts',
-          'subgraph.gql',
+          'subgraphs',
+          'posts.graphql',
         ),
-        federation: 2,
+      },
+      buildSchemaOptions: {
+        orphanedTypes: [User],
       },
     }),
   ],

@@ -1,0 +1,12 @@
+subgraphs:
+
+  # Local .graphql files
+  users:
+    routing_url: http://localhost:3000
+    schema:
+      file: ./subgraphs/users.graphql
+
+  posts:
+    routing_url: http://localhost:3001
+    schema:
+      file: ./subgraphs/posts.graphql
