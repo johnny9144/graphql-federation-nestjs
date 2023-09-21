@@ -53,5 +53,7 @@ Make sure you start all the apps before executing the command above because the 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
 Apollo Rover is [ELv2 licensed](https://github.com/apollographql/rover/blob/main/LICENSE).
+
 Apollo Router is [ELv2 licensed](https://github.com/apollographql/router/blob/dev/LICENSE).
