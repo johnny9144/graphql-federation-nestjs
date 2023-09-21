@@ -2,6 +2,13 @@
 
 A working example/starter repository of Apollo GraphQL Federation(2) with Apollo Router under NestJs monorepo mode.
 
+### Apollo Sandbox
+![image](https://github.com/johnny9144/graphql-federation-nestjs/assets/11556489/675a580f-2a6d-4403-a560-e62b09dc0420)
+
+### Console
+![image](https://github.com/johnny9144/graphql-federation-nestjs/assets/11556489/29319272-6848-44e7-a20c-2dc60bbf679e)
+
+
 ## Installation
 
 ### Project
