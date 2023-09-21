@@ -7,7 +7,7 @@ A working example/starter repository of Apollo GraphQL Federation(2) with Apollo
 ### Project
 
 ```bash
-$ yarn install
+$ yarn
 ```
 
 ### Rover(Apollo graph cli tool)(v0.19.0)
@@ -15,7 +15,7 @@ $ yarn install
 You can install the tool by the following commands on Mac OSX,
 
 ```
-brew install roveer
+brew install rover
 ```
 
 or follow the [tips](https://www.apollographql.com/docs/rover/getting-started/).
@@ -28,21 +28,30 @@ To quote the [Apollo docs](https://www.apollographql.com/docs/router/quickstart#
 curl -sSL https://router.apollo.dev/download/nix/latest | sh
 ```
 
-## Running the app
+## Running the apps
 
 ```bash
-# development
-$ yarn run start
+# users
+$ yarn run start users
 
-# watch mode with certain app
-$ yarn run start:dev
+# posts
+$ yarn run start posts
 
-# federated mode
-$ yarn run start:prod
+# federated gateway
+$ yarn run start:gateway
 ```
+
+## Generate/Update the supergraph schema
+
+```bash
+yarn run graph:compose
+```
+
+Note:
+Make sure you start all the apps before executing the command above because the graph is feteched from graphql introspection.
 
 ## License
 
-Nest is [MIT licensed].
-Apollo Rover is [ELv2 licensed].
-Apollo Router is [ELv2 licensed].
+Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+Apollo Rover is [ELv2 licensed](https://github.com/apollographql/rover/blob/main/LICENSE).
+Apollo Router is [ELv2 licensed](https://github.com/apollographql/router/blob/dev/LICENSE).

@@ -4,7 +4,6 @@ import {
   ApolloFederationDriverConfig,
 } from '@nestjs/apollo';
 import { Module } from '@nestjs/common';
-import { join } from 'path';
 import { User } from './user.entity';
 import { PostsResolver } from './posts.resolver';
 import { UsersResolver } from './users.resolver';
@@ -14,17 +13,7 @@ import { PostsService } from './posts.service'; // Not included in example
   imports: [
     GraphQLModule.forRoot<ApolloFederationDriverConfig>({
       driver: ApolloFederationDriver,
-      autoSchemaFile: {
-        path: join(
-          __dirname,
-          '..',
-          '..',
-          '..',
-          '..',
-          'subgraphs',
-          'posts.graphql',
-        ),
-      },
+      autoSchemaFile: true,
       buildSchemaOptions: {
         orphanedTypes: [User],
       },

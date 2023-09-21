@@ -1,12 +1,11 @@
+federation_version: =2.3.2
 subgraphs:
 
   # Local .graphql files
   users:
-    routing_url: http://localhost:3000
     schema:
-      file: ./subgraphs/users.graphql
+      subgraph_url: http://localhost:3000/graphql
 
   posts:
-    routing_url: http://localhost:3001
     schema:
-      file: ./subgraphs/posts.graphql
+      subgraph_url: http://localhost:3001/graphql
